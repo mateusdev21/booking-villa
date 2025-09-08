@@ -4,16 +4,18 @@ import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="">
-      <div className="flex py-36 px-[10vw] bg-[url(./assets/images/footer.png)] bg-cover min-h-[80vh]">
+    <footer id="footer">
+      <div className="flex py-36 px-[10vw] bg-[url(./assets/images/footer.png)] bg-cover bg-center min-h-[80vh]">
         <div className="container p-6">
-          <h1 className="text-4xl font-bold text-white mb-8">
+          <h1 className="text-4xl font-bold text-white mb-8 text-center xl:text-left">
             Make your comfort is <br />
             our happines
           </h1>
-          <button className="py-3 px-9 rounded-md bg-[#F1F6F6] text-[#106A64] hover:cursor-pointer">
-            Book Now
-          </button>
+          <div className="flex">
+            <button className="py-3 px-9 mx-auto lg:mx-0 rounded-md bg-[#F1F6F6] text-[#106A64] hover:cursor-pointer">
+              Book Now
+            </button>
+          </div>
         </div>
       </div>
       <div className="flex py-8 px-[12vw]">

@@ -26,7 +26,10 @@ const NavBar = () => {
         <div className="container flex justify-between min-w-full align-middle py-4 px-[10vw] text-white">
           <div className="flex items-center">
             <button
-              onClick={() => setOpenMenu(!openMenu)}
+              onClick={() => {
+                setOpenMenu(!openMenu);
+                setOpenCategory(false);
+              }}
               className="mr-12 hover:cursor-pointer"
             >
               <img src={HamburgerMenu} alt="menu" />
@@ -34,7 +37,10 @@ const NavBar = () => {
 
             <button
               className="xl:block hidden hover:cursor-pointer"
-              onClick={() => setOpenCategory(!openCategory)}
+              onClick={() => {
+                setOpenCategory(!openCategory);
+                setOpenMenu(false);
+              }}
             >
               Villa Category
               {openCategory ? (
@@ -48,7 +54,7 @@ const NavBar = () => {
           <ul className="xl:flex items-center hidden">
             <li className="mr-12">
               <a
-                href="#"
+                href="#footer"
                 className="font-normal text-white hover:text-[#106A64]"
               >
                 Contact Us
@@ -61,8 +67,8 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        {openMenu && (
-          <ul className="lg:mx-34 mx-23 space-y-2 text-gray-700 font-medium bg-white w-[10vw] rounded-md">
+        {openMenu && !openCategory && (
+          <ul className="lg:mx-34 mx-23 space-y-2 text-gray-700 font-medium bg-white w-[20vw] lg:w-[10vw] rounded-md">
             <li>
               <a
                 href="#about"
@@ -91,7 +97,7 @@ const NavBar = () => {
             </li>
           </ul>
         )}
-        {openCategory && (
+        {openCategory && !openMenu && (
           <ul className="lg:mx-34 mx-34 space-y-2 text-gray-700 font-medium bg-white w-[10vw] rounded-md">
             <li>
               <a

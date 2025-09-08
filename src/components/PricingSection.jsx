@@ -8,7 +8,7 @@ import { FaBed } from "react-icons/fa";
 
 const PricingSection = () => {
   return (
-    <section className="items-center px-[10vw] pb-24 pt-8">
+    <section id="pricing" className="items-center px-[10vw] pb-24 pt-8">
       <div className="w-full mb-8">
         <h2 className="text-[#0A0A0A] font-semibold text-4xl text-center">
           Our Choise of <span className="text-[#106A64]">Villa Studios</span>

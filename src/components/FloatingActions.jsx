@@ -22,7 +22,7 @@ const FloatingActions = () => {
 
   return (
     <div className="flex relative justify-center">
-      <div className="flex bg-white absolute -top-14 py-8 px-20 rounded-md shadow-sm/20">
+      <div className="hidden lg:flex bg-white absolute -top-14 py-8 px-20 rounded-md shadow-sm/20">
         <div className="flex flex-[1] items-center px-8 border-r-[0.5px] border-[#9E9E9E] text-nowrap">
           <p>Room</p>
           <FaCaretDown className="ml-2 text-[#106A64]" />
@@ -44,9 +44,35 @@ const FloatingActions = () => {
           </button>
         </div>
       </div>
+
+      <div className="block lg:hidden bg-white absolute -top-14 shadow-sm/20 w-[90vw]">
+        <div className="flex items-center px-4 py-2 text-nowrap">
+          <p>Room</p>
+          <FaCaretDown className="ml-2 text-[#106A64]" />
+        </div>
+        <hr className="text-[#9E9E9E]" />
+        <div className="flex px-4 py-2">
+          <div className="flex flex-[1] items-center py-2 text-nowrap border-r-[0.5px] border-[#9E9E9E]">
+            <LuCalendarDays className="text-[#106A64] mr-2" />
+            <p>Check in</p>
+          </div>
+          <div className="flex flex-[1] items-center px-2 text-nowrap">
+            <LuCalendarDays className="text-[#106A64] mr-2" />
+            <p>Check out</p>
+          </div>
+        </div>
+        <div className="flex p-0 items-center text-nowrap">
+          <button
+            onClick={() => setOpen(true)}
+            className="py-2 px-8 bg-[#106A64] text-white hover:opacity-80 hover:cursor-pointer w-[100%]"
+          >
+            Check avability
+          </button>
+        </div>
+      </div>
+
       {open && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-          {/* Dialog box */}
           <div
             ref={dialogRef}
             className="bg-white rounded-lg shadow-lg w-80 p-6 relative"
