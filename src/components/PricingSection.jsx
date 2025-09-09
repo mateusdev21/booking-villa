@@ -16,92 +16,92 @@ const PricingSection = () => {
       </div>
       <div className="flex mb-8">
         <div className="flex-[1]">
-          <div className="bg-white m-4 p-4 rounded-md shadow-xs/20 hover:cursor-pointer">
+          <div className="group bg-white m-4 p-4 rounded-md shadow-xs/20 hover:cursor-pointer hover:bg-[#106A64] transition-colors duration-200">
             <div className="mb-4">
               <img src={Card1} width="368px" alt="" />
             </div>
-            <p className="text-[#106A64] font-medium mb-2">4 Bedroom villa</p>
+            <p className="text-[#106A64] font-medium mb-2 group-hover:text-white">4 Bedroom villa</p>
             <div className="flex mb-4">
               <div className="flex-[2] mr-6">
-                <p className="text-xs mb-8">Main Facilities</p>
+                <p className="text-xs mb-8 group-hover:text-white">Main Facilities</p>
                 <div className="flex">
-                  <FaBed className="mr-2 text-[#616161] " />
-                  <p className="text-[#616161] text-xs">4 Bed</p>
+                  <FaBed className="mr-2 text-[#616161] group-hover:text-white" />
+                  <p className="text-[#616161] text-xs group-hover:text-white">4 Bed</p>
                 </div>
               </div>
               <div className="flex-[3]">
-                <p className="text-xs mb-4">
+                <p className="text-xs mb-4 group-hover:text-white">
                   Wifi provide, TV & Karaoke, Kitchen, Swimming pool
                 </p>
                 <div className="flex">
-                  <LuUsers className="mr-2 text-[#616161] " />
-                  <p className="text-[#616161] text-xs">8 Persons</p>
+                  <LuUsers className="mr-2 text-[#616161] group-hover:text-white" />
+                  <p className="text-[#616161] text-xs group-hover:text-white">8 Persons</p>
                 </div>
               </div>
             </div>
-            <p className="text-[#106A64] text-xl font-medium">
+            <p className="text-[#106A64] text-xl font-medium group-hover:text-white">
               Rp 3.749.000{" "}
-              <span className="text-[#616161] text-sm font-normal">/night</span>
+              <span className="text-[#616161] text-sm font-normal group-hover:text-white">/night</span>
             </p>
           </div>
         </div>
         <div className="flex-[1]">
-          <div className="bg-[#106A64] m-4 p-4 rounded-md shadow-xs/20 hover:cursor-pointer">
+          <div className="group bg-white m-4 p-4 rounded-md shadow-xs/20 hover:cursor-pointer hover:bg-[#106A64] transition-colors duration-200">
             <div className="mb-4">
               <img src={Card2} width="368px" alt="" />
             </div>
-            <p className="text-white font-medium mb-2">Joglo House</p>
+            <p className="text-[#106A64] font-medium mb-2 group-hover:text-white">Joglo House</p>
             <div className="flex mb-4">
               <div className="flex-[2] mr-6">
-                <p className="text-xs mb-8 text-white">Main Facilities</p>
+                <p className="text-xs mb-8 group-hover:text-white">Main Facilities</p>
                 <div className="flex">
-                  <FaBed className="mr-2 text-white" />
-                  <p className="text-white text-xs">4 Bed</p>
+                  <FaBed className="mr-2 text-[#616161] group-hover:text-white" />
+                  <p className="text-[#616161] text-xs group-hover:text-white">4 Bed</p>
                 </div>
               </div>
               <div className="flex-[3]">
-                <p className="text-xs mb-4 text-white">
+                <p className="text-xs mb-4 group-hover:text-white">
                   Wifi provide, TV & Karaoke, Kitchen, Swimming pool
                 </p>
                 <div className="flex">
-                  <LuUsers className="mr-2 text-white" />
-                  <p className="text-white text-xs">4 Persons</p>
+                  <LuUsers className="mr-2 text-[#616161] group-hover:text-white" />
+                  <p className="text-[#616161] text-xs group-hover:text-white">4 Persons</p>
                 </div>
               </div>
             </div>
-            <p className="text-white text-xl font-medium">
+            <p className="text-[#106A64] text-xl font-medium group-hover:text-white">
               Rp 3.749.000{" "}
-              <span className="text-white text-sm font-normal">/night</span>
+              <span className="text-[#616161] text-sm font-normal group-hover:text-white">/night</span>
             </p>
           </div>
         </div>
         <div className="flex-[1] lg:block hidden">
-          <div className="bg-white m-4 p-4 rounded-md shadow-xs/20 hover:cursor-pointer">
+          <div className="group bg-white m-4 p-4 rounded-md shadow-xs/20 hover:cursor-pointer hover:bg-[#106A64] transition-colors duration-200">
             <div className="mb-4">
               <img src={Card3} width="368px" alt="" />
             </div>
-            <p className="text-[#106A64] font-medium mb-2">Kudus House</p>
+            <p className="text-[#106A64] font-medium mb-2 group-hover:text-white">Kudus House</p>
             <div className="flex mb-4">
               <div className="flex-[2] mr-6">
-                <p className="text-xs mb-8">Main Facilities</p>
+                <p className="text-xs mb-8 group-hover:text-white">Main Facilities</p>
                 <div className="flex">
-                  <FaBed className="mr-2 text-[#616161]" />
-                  <p className="text-[#616161] text-xs">4 Bed</p>
+                  <FaBed className="mr-2 text-[#616161] group-hover:text-white" />
+                  <p className="text-[#616161] text-xs group-hover:text-white">4 Bed</p>
                 </div>
               </div>
               <div className="flex-[3]">
-                <p className="text-xs mb-4">
+                <p className="text-xs mb-4 group-hover:text-white">
                   Wifi provide, TV & Karaoke, Kitchen
                 </p>
                 <div className="flex">
-                  <LuUsers className="mr-2 text-[#616161] " />
-                  <p className="text-[#616161] text-xs">4 Persons</p>
+                  <LuUsers className="mr-2 text-[#616161] group-hover:text-white" />
+                  <p className="text-[#616161] text-xs group-hover:text-white">4 Persons</p>
                 </div>
               </div>
             </div>
-            <p className="text-[#106A64] text-xl font-medium">
+            <p className="text-[#106A64] text-xl font-medium group-hover:text-white">
               Rp 3.999.000{" "}
-              <span className="text-[#616161] text-sm font-normal">/night</span>
+              <span className="text-[#616161] text-sm font-normal group-hover:text-white">/night</span>
             </p>
           </div>
         </div>
